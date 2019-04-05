@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <! dont know why cant put below style code into separate css code -->
+  <style>body {
+      font-family: "Avenir", "Helvetica Neue", Helvetica, sans-serif;
+      width: 100%;
+      color: #fff;
+      background-color: #6cb0e0;
+      }
+      h1, h2 {
+        text-transform: capitalize;
+        text-align: center;
+      }
+      h1 {
+        font-size: 48px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+      }
+      h2 {
+        font-size: 32px;
+        color: #888;
+      }
+
+      /* SVG */
+      svg.main {
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+      }
+      .background {
+        fill: #6cb0e0;
+        pointer-events: all;
+      }
+      .countries {
+        fill: #b0d0ab;
+        stroke: #6cb0e0;
+        stroke-width: 0.5px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        vector-effect: non-scaling-stroke;
+      }
+      .airports {
+        fill: #036;
+        stroke: #6cb0e0;
+        stroke-width: 0.5px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        vector-effect: non-scaling-stroke;
+      }
+      .plane {
+        fill: #fff;
+        stroke-width: 0;
+      }
+      .route {
+        fill: none;
+        /*stroke: #fff;
+        stroke-width: 0.5;*/
+      }</style>
+  <!--<link rel="stylesheet" type="text/css" href="demo.css" media="screen" />-->
+</head>
+<body>
+  <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="//d3js.org/topojson.v1.min.js"></script>
+  <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+
+  <div class="wrapper">
+    <h1>UPS Flight Simulation Validation</h1>
+    <h2></h2>
+  </div>
+
+  <script src="flightanimation.js"></script>
+</body>
+
+<!-- Start local server by cd to animation and running`python -m http.server` -->
